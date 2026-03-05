@@ -50,29 +50,6 @@ body {
     gap: 5px;
 }
 
-.container div {
-    background-color: #f1f1f1;
-    color: #000000;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.container2 {
-    display: grid;
-    grid-template-columns: 101.3%;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    gap: 5px;
-}
-
-.container2 div {
-    background-color: #f1f1f1;
-    color: #000000;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-}
 
 .container3 {
     display: grid;
@@ -82,28 +59,12 @@ body {
     padding: 5px;
     gap: 5px;
 }
-
 .container3 div {
     background-color: #f1f1f1;
     color: #000000;
     padding: 10px;
     font-size: 30px;
     text-align: center;
-}
-
-.container23 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    gap: 5px;
-}
-
-.container,
-.container23 {
-    margin-left: 20%;
-    margin-right: 20%;
-
 }
 
 .boridygd {
