@@ -67,5 +67,4 @@ for (let i = 0; i < plants.length; i++) {
         <p>Price: €${plant.Price}</p>
     `;
     document.querySelector(".container").appendChild(plantElement);
-    // document.container.appendChild(plantElement);
 }
