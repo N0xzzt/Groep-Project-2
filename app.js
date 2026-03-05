@@ -26,32 +26,46 @@ let plants = [
 {
      Name:"Trouwdagboeket",
      Text:"speciaal samengestelde trouwdag boeket bundel al vanaf €25",
-     Img:"nora'sFlora foto's/pexels-secret-garden-333350-931176.jpg",
+     Img:"nora'sFlora foto's/pexels-43381756-7462761.jpg",
      Price:25
     },
 {
      Name:"Lenteboeket",
      Text:"Lenteboeket al vanaf €20",
-     Img:"nora'sFlora foto's/pexels-secret-garden-333350-931176.jpg",
+     Img:"nora'sFlora foto's/pexels-valeriya-1484657.jpg",
      Price:20
     },
 {   Name:"Diverse Planten",
     Text:"Diverse Planten al vanaf €5 per pot",
-    Img:"nora'sFlora foto's/pexels-secret-garden-333350-931176.jpg",
+    Img:"nora'sFlora foto's/pexels-maureen-piecesphotography-1207978.jpg",
     Price:15
     },
 {
      Name:"Diverse lente bloemen",
      Text:"Diverse lentebloemen €7,50 per bos",
-     Img:"nora'sFlora foto's/pexels-secret-garden-333350-931176.jpg",
+     Img:"nora'sFlora foto's/pexels-jos-van-ouwerkerk-377363-1075960.jpg",
      Price:25
     },
 {
     Name:"Paarse allium Bloemen",
     Text:"Paarse allium Bloemen per bos €4",
-    Img:"nora'sFlora foto's/pexels-secret-garden-333350-931176.jpg",
+    Img:"nora'sFlora foto's/pexels-mikebirdy-109828.jpg",
     Price:10
     },
 
 ]
 ;
+
+for (let i = 0; i < plants.length; i++) {
+    const plant = plants[i];
+    const plantElement = document.createElement("div");
+    plantElement.classList.add("plant");
+    plantElement.innerHTML = `
+        <img src="${plant.Img}" alt="${plant.Name}">
+        <h2>${plant.Name}</h2>
+        <p>${plant.Text}</p>
+        <p>Price: €${plant.Price}</p>
+    `;
+    document.querySelector(".container").appendChild(plantElement);
+    // document.container.appendChild(plantElement);
+}
