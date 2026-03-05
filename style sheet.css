@@ -28,6 +28,8 @@ a:active {
     color: white;
 }
 
+.Winkelmand-Icon { position: absolute; top: 4%; right: 20px; transform: translateY(-50%);}
+
 .centered {
     position: absolute;
     top: 50%;
