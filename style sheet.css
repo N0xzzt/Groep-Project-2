@@ -28,7 +28,19 @@ a:active {
     color: white;
 }
 
-.Winkelmand-Icon { position: absolute; top: 4%; right: 20px; transform: translateY(-50%);}
+.winkelwagen {
+    text-align: center;
+    background-color: rgb(46, 82, 39);
+    position: absolute;
+    padding: 0.75px;
+    font-size: 1.5vmax;
+    color: white;
+    right: 1%;
+    top: 30px;
+    
+}
+
+
 
 .centered {
     position: absolute;
