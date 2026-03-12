@@ -3,6 +3,7 @@ addToBasketButtons.forEach(button => {
     button.addEventListener("click", addToBasket);
 });
 
+let basket = [];
 
 let plants = [
     {
@@ -86,8 +87,6 @@ for (let i = 0; i < plants.length; i++) {
     document.querySelector(".container").appendChild(plantElement);
 }
 
-
-let basket = [];
-
 function addToBasket() {
+
 }
