@@ -1,9 +1,6 @@
-const addToBasketButtons = document.querySelectorAll(".add-to-basket");
-addToBasketButtons.forEach(button => {
-    button.addEventListener("click", addToBasket);
-});
 
-let basket = [];
+
+let basket = 0;
 
 let plants = [
     {
@@ -72,9 +69,9 @@ let plants = [
 ]
 ;
 
-for (let i = 0; i < plants.length; i++) {
-    const plant = plants[i];
-    const plantElement = document.createElement("div");
+
+function addPlantToContainer(plant) {
+   const plantElement = document.createElement("div");
     plantElement.classList.add("plant");
     plantElement.innerHTML = `
         <img src="${plant.Img}" alt="${plant.Name}">
@@ -87,6 +84,25 @@ for (let i = 0; i < plants.length; i++) {
     document.querySelector(".container").appendChild(plantElement);
 }
 
-function addToBasket() {
+for (let i = 0; i < plants.length; i++) {
+    const plant = plants[i];
+    addPlantToContainer(plant);
+}
 
+
+
+const addToBasketButtons = document.querySelectorAll(".buttonOnAssorment");
+
+for (let index = 0; index < addToBasketButtons.length; index++) {
+    const element = addToBasketButtons[index];
+     element.addEventListener("click",  (event) => {
+     addToBasket(index); 
+    });
+    
+}
+
+function addToBasket(index) {
+    //stop data in localStorage
+    addPlantToContainer(plants[index]);
+    
 }
