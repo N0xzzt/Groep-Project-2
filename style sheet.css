@@ -32,13 +32,26 @@ a:active {
     text-align: center;
     background-color: rgb(46, 82, 39);
     position: absolute;
-    padding: 0.75px;
-    font-size: 1.5vmax;
-    color: white;
+    padding: 10px; 
     right: 1%;
-    top: 30px;
-    
+    top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.winkelwagen img {
+    width: 70px;  
+    height: auto; 
+    display: block;
+}
+
+
+.winkelwagen a {
+    text-decoration: none;
+}
+
 
 
 
