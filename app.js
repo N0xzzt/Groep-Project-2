@@ -102,7 +102,9 @@ for (let index = 0; index < addToBasketButtons.length; index++) {
 }
 
 function addToBasket(index) {
+    basket++;
     //stop data in localStorage
     addPlantToContainer(plants[index]);
-    
+    localStorage.setItem("basket", basket);
+    alert("Product togevoegd aan winkelmand " + basket); 
 }
