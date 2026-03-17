@@ -5,35 +5,35 @@ let basket = 0;
 let plants = [
     {
      Name:"Zonnebloem",
-     Text:"zonnebloem Text",
+     Text:"Zonnebloemen al vanaf €2 per bos",
      Img: "nora'sFlora foto's/pexels-pixabay-54267.jpg",
      Price:5,
      button: "add to basket"
     },
 {
      Name:"Rode Tulpen",
-     Text:"Rode Tulpen Text",
+     Text:"Rode Tulpen al vanaf €3 per bos",
      Img:"nora'sFlora foto's/pexels-valeriya-1961778.jpg",
      Price:7.68,
      button: "add to basket"
     },
 {
      Name:"Cactus",
-     Text:"CactusText",
+     Text:"Cactus in pot, deze week 3 voor €5",
      Img:"nora'sFlora foto's/pexels-scottwebb-403571.jpg",
      Price:2,
      button: "add to basket"
     },
 {
      Name:"Rozenboeket",
-     Text:"Rozenboeket Text",
+     Text:"Rozenboeket al vanaf €19.60",
      Img:"nora'sFlora foto's/pexels-secret-garden-333350-931176.jpg",
      Price:19.60,
      button: "add to basket"
     },
 {
      Name:"Trouwdagboeket",
-     Text:"speciaal samengestelde trouwdag boeket bundel al vanaf",
+     Text:"Speciaal samengestelde trouwdag boeket bundel al vanaf",
      Img:"nora'sFlora foto's/pexels-43381756-7462761.jpg",
      Price:25,
      button: "add to basket"
