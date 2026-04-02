@@ -108,3 +108,21 @@ function addToBasket(index) {
     localStorage.setItem("basket", basket);
     alert("Product togevoegd aan winkelmand " + basket); 
 }
+
+function loadBasket() {
+    const savedBasket = localStorage.getItem("basket");
+    if (savedBasket) {
+        basket = parseInt(savedBasket);
+    }
+}
+
+loadBasket();
+
+function updateBasketDisplay() {
+    const basketDisplay = document.querySelector(".winkelmandupdatehere");
+    if (basketDisplay) {
+        basketDisplay.textContent = `Uw winkelmand bevat ${basket} items.`;
+    }
+}
+
+updateBasketDisplay();
